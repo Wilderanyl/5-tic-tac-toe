@@ -131,6 +131,11 @@ body .footer a {
 }
 
 .board .box.x,
+.board .box.o {
+  cursor: not-allowed;
+}
+
+.board .box.x,
 .board .box.o,
 .board.x .box:not(.x):not(.o):hover,
 .board.o .box:not(.x):not(.o):hover {
@@ -138,7 +143,6 @@ body .footer a {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: no-drop;
 }
 
 .board .box.x::after,
@@ -205,6 +209,14 @@ body .footer a {
   background: red;
 } */
 
-.restart {
-  display: none;
-}
+/* .restart {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  flex-direction: column;
+
+} */
