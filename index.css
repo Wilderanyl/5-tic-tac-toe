@@ -205,18 +205,43 @@ body .footer a {
   background: var(--secondary-color);
 }
 
-/* .board.o .box:not(.x):not(.o):hover::after {
-  background: red;
-} */
 
-/* .restart {
+.restart {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
-  background: black;
+  background: rgba(0, 0, 0, 0.7);
   flex-direction: column;
+z-index: 1;
+}
 
-} */
+.restart p {
+  font-size: 70px;
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.restart button {
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+
+.restart button:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.show {
+  display: flex;
+}
